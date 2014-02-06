@@ -1,6 +1,6 @@
  usage
  
- java -jar ReadManifests.jar <directory> [manifest-attrib]
+ java -jar ReadManifests.jar directory [manifest-attrib]
  
  where <directory> is the directory to find jars in
  and [manifest-attrib] is an optional manifest attribute name. If specified then only retrieve this attribute from all manifests. If not specified, then retrieve all attributes from all manifests
