@@ -1,13 +1,17 @@
  usage
  
- java -jar ReadManifests.jar directory [manifest-attrib]
+ java -jar ReadManifests.jar <i>directory</i> <i>[manifest-attrib]</i>
  
- where directory is the directory to find jars in
- and [manifest-attrib] is an optional manifest attribute name. If specified then only retrieve this attribute from all manifests. If not specified, then retrieve all attributes from all manifests
+ where
+ <ul>
+ <li> <i>directory</i> is the directory to find jars in
+ <li> <i>[manifest-attrib]</i> is an optional manifest attribute name. If specified then only retrieve this attribute from all manifests. If not specified, then retrieve all attributes from all manifests
+ </ul>
  
  e.g.
  
- D:\workspace\ReadManifests>java -jar ReadManifests.jar c:\FatWire\JSK\7.6.2\App_Server\apache-tomcat-6.0.32\webapps\cs\WEB-INF\lib Implementation-Version
+ <pre>
+ java -jar ReadManifests.jar c:\oracle\webcenter\sites\tomcat\webapps\cs\WEB-INF\lib Implementation-Version
  
  adf-faces-api.jar | 10_1_3_0_4
  adfshare.jar | no manifest
@@ -22,3 +26,4 @@
  batch.jar | 7.6.2 Build Date: Jan 29 2012 at 23:09:20 ContentServer-bld- 37 Revision:144617
  catalog.jar | 7.6.2 Build Date: Jan 29 2012 at 23:15:24 xclG-bld- 28 Revision:144617
  ...
+</pre>
